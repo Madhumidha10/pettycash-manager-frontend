@@ -106,7 +106,7 @@ const mdTheme = createTheme({
   },
 });
 
-function DashboardContent({user}) {
+function DashboardContent() {
  
   const [open, setOpen] = useState(true);
   const toggleDrawer = () => {
@@ -171,7 +171,7 @@ function DashboardContent({user}) {
               {/* {monthName}-{year} Dashboard */}
               Dashboard
             </Typography>
-            Welcome {user}
+            Welcome {jwt(localStorage.getItem('token')).name}
           </Toolbar>
           
         </AppBar>
@@ -228,6 +228,6 @@ function DashboardContent({user}) {
 }
 
 export default function Dashboard() {
-  const [user,setUser]=useState(jwt(localStorage.getItem('token')).name)
-  return <DashboardContent user={user}/>
+  
+  return <DashboardContent />
 }

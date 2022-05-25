@@ -63,26 +63,9 @@ const Reports = () => {
    
 
       <Grid container spacing={3}>
+        
         <Grid item sm={6}>
-          <Card sx={{ backgroundColor: "green", p: 2, m: 2 }}>
-            <Typography component="p" variant="h4">
-              {opening}
-            </Typography>
-            <Typography color="text.secondary" sx={{ flex: 1 }}>
-              Opening Amount
-            </Typography>
-          </Card>
-          <Card sx={{ backgroundColor: "darkorange", p: 2, m: 2 }}>
-            <Typography component="p" variant="h4">
-              {opening + Cin - Cout}
-            </Typography>
-            <Typography color="text.secondary" sx={{ flex: 1 }}>
-              Balance Amount
-            </Typography>
-          </Card>
-        </Grid>
-        <Grid item sm={6}>
-        <Card sx={{ m: "auto", mt:3,p:2, mb: 2 }}>
+        <Card sx={{ m: "auto",p:3,mt:2}}>
         {company ? (
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
@@ -103,7 +86,24 @@ const Reports = () => {
         )}
       </Card>
         </Grid>
-       
+        <Grid item sm={6}>
+          <Card sx={{ backgroundColor: "green", p: 2, m: 2 }}>
+            <Typography component="p" variant="h4">
+              {opening}
+            </Typography>
+            <Typography color="text.secondary" sx={{ flex: 1 }}>
+              Opening Amount
+            </Typography>
+          </Card>
+          <Card sx={{ backgroundColor: "darkorange", p: 2, m: 2 }}>
+            <Typography component="p" variant="h4">
+              {opening + Cin - Cout}
+            </Typography>
+            <Typography color="text.secondary" sx={{ flex: 1 }}>
+              Balance Amount
+            </Typography>
+          </Card>
+        </Grid>
         <Grid item sm={6}>
           <Paper
             sx={{
