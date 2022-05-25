@@ -6,6 +6,22 @@
   height: 40vmin;
   pointer-events: none;
 }
+.form-container{
+
+  margin:50px auto;
+  padding:30px;
+  color:white;
+  justify-content: space-around;
+  
+
+}
+.card{
+  background: linear-gradient(20deg,rgba(0,0,0,0.9));
+  border-radius: 1rem;
+  border: 0.5px solid #fff;
+  box-shadow: 0px 0px 17px 7px;
+
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
