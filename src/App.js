@@ -21,14 +21,14 @@ function App() {
         
         
         {/* dashboard routes */}
-        <Route path="/dashboard" element={localStorage.getItem("token")?<Dashboard />:<Login />} />
-        <Route path="/dashboard/company" element={localStorage.getItem("token")?<Dashboard />:<Login />} />
-        <Route path="/dashboard/addin" element={localStorage.getItem("token")?<Dashboard />:<Login />} />
-        <Route path="/dashboard/addout" element={localStorage.getItem("token")?<Dashboard />:<Login />} />
-        <Route path="/dashboard/openbalance" element={localStorage.getItem("token")?<Dashboard />:<Login />} />
-        <Route path="/dashboard/reports" element={localStorage.getItem("token")?<Dashboard />:<Login />} />
-        <Route path="/dashboard/expenselist" element={localStorage.getItem("token")?<Dashboard />:<Login />} />
-        <Route path="/dashboard/incomelist" element={localStorage.getItem("token")?<Dashboard />:<Login />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/dashboard/company" element={<Dashboard />} />
+        <Route path="/dashboard/addin" element={<Dashboard />} />
+        <Route path="/dashboard/addout" element={<Dashboard />} />
+        <Route path="/dashboard/openbalance" element={<Dashboard />} /> 
+        <Route path="/dashboard/reports" element={<Dashboard />} />
+        <Route path="/dashboard/expenselist" element={<Dashboard />} />
+        <Route path="/dashboard/incomelist" element={<Dashboard />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
 

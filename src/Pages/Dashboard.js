@@ -24,7 +24,8 @@ import AddIncome from "../components/AddIncome";
 import Settings from "../components/Settings";
 import IncomeList from "../components/IncomeList";
 import ExpenseList from "../components/ExpenseList";
-import jwt from 'jwt-decode'
+
+
 var currDate = new Date();
 var months = [
   "January",
@@ -171,7 +172,6 @@ function DashboardContent() {
               {/* {monthName}-{year} Dashboard */}
               Dashboard
             </Typography>
-            Welcome {jwt(localStorage.getItem('token')).name}
           </Toolbar>
           
         </AppBar>
